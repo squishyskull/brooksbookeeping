@@ -48,7 +48,7 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li :hover::after{
+.nav-links ul li:hover::after{
     width: 100%;
 }
 .text-box{
@@ -84,11 +84,17 @@ nav img{
     background: #5255a8;
     transition: 1s;
 }
+
+nav.fa{
+    display: none;
+}
+
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
     .nav-links{
@@ -100,5 +106,12 @@ nav img{
         right: 0;
         text-align: left;
         z-index: 2;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
 }
